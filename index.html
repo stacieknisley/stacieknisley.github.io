@@ -1,97 +1,528 @@
-<!doctype html>
-<html lang="en-us">
+<!DOCTYPE html>
+<html>
+<title>staciekDesigns</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+    crossorigin="anonymous">
+<style>
+    body,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-family: "Lato", sans-serif;
+    }
 
-<head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bootstrap_Index</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css"> 
-</head>
+    body,
+    html {
+        height: 100%;
+        color: #777;
+        line-height: 1.8;
+    }
 
+    /* Create a Parallax Effect */
+
+    .bgimg-1,
+    .bgimg-2,
+    .bgimg-3 {
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    /* First image (Logo. Full height) */
+
+    .bgimg-1 {
+        background-image: url("./assets/images/ScreenShotsofHomework/SMKComputerImageSmallb.png");
+        min-height: 75%;
+    }
+
+    /* Second image (Portfolio) */
+
+    .bgimg-2 {
+        background-image: url("./assets/images/ScreenShotsofHomework/SMKComputerImageSmallb.png");
+        min-height: 400px;
+    }
+
+    /* Third image (Contact) */
+
+    .bgimg-3 {
+        background-image: url("./assets/images/ScreenShotsofHomework/SMKComputerImageSmallb.png");
+        min-height: 400px;
+    }
+
+    .w3-wide {
+        letter-spacing: 10px;
+    }
+
+    .w3-hover-opacity {
+        cursor: pointer;
+    }
+
+    .aligncenter {
+        image-orientation: center;
+    }
+
+    .columnport {
+
+        float: left;
+        padding: 5px;
+        padding: 20px;
+    }
+
+    /* The grid: Four equal columns that floats next to each other */
+
+    .columnskills {
+        float: left;
+        width: 25%;
+        padding: 10px;
+    }
+
+    /* The grid: Four equal columns that floats next to each other */
+
+    .column {
+        float: left;
+        width: 25%;
+        padding: 10px;
+    }
+
+    .column2 {
+        float: flex;
+        width: 50%;
+        padding: 15px;
+    }
+
+    .column3 {
+        float: right;
+        width: 30%;
+        padding: 15px;
+    }
+
+
+    /* Style the images inside the grid */
+
+    .column img {
+        opacity: 0.8;
+        cursor: pointer;
+    }
+
+    .column img:hover {
+        opacity: 1;
+    }
+
+    /* Clear floats after the columns */
+
+    .row:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+
+
+
+    /* Style the images inside the grid */
+
+    /* .columnskills img {
+        opacity: 0.8;
+        cursor: pointer;
+    } */
+
+    /* Turn off parallax scrolling for tablets and phones */
+
+    @media only screen and (max-device-width: 1024px) {
+        .bgimg-1,
+        .bgimg-2,
+        .bgimg-3 {
+            background-attachment: scroll;
+        }
+    }
+</style>
 
 <body>
 
- <!-- first row -->
-    <div>
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container">
-          <a class="navbar-brand" href="#">Stacie M Knisley Designs</a>
+    <!-- Navbar (sit on top) -->
+    <div class="w3-top">
+        <div class="w3-bar" id="myNavbar">
+            <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()"
+                title="Toggle Navigation Menu">
+                <i class="fa fa-bars"></i>
+            </a>
+            <a href="#stacie" style="color:rgb(4, 117, 216);" class="w3-bar-item w3-button">STACIE M. KNISLEY</a>
+            <a href="#home" style="color:rgb(4, 117, 216);" class="w3-bar-item w3-button">HOME</a>
+            <a href="#about" style="color:rgb(4, 117, 216);" class="w3-bar-item w3-button w3-hide-small">
+                <i class="fa fa-user"></i> ABOUT</a>
+            <a href="#portfolio" style="color:rgb(4, 117, 216);" class="w3-bar-item w3-button w3-hide-small">
+                <i class="fa fa-th"></i> PORTFOLIO</a>
+            <a href="#contact" style="color:rgb(4, 117, 216);" class="w3-bar-item w3-button w3-hide-small">
+                <i class="fa fa-envelope"></i> CONTACT</a>
+            <a href="#" style="color:rgb(4, 117, 216);" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red">
+                <i class="fa fa-search"></i>
+            </a>
         </div>
-      </nav>
-    </div>
-    
 
-  <!-- second row -->
- 
-
-    <div class = "container">
-        <div class = row>       
-            
-            <div class = "col-md-3">
-                        <div class="card" style="width: 10rem;">
-                            <img class="card-img-top" src="assets/images/selfport.jpg" alt="Image of Stacie Knisley"/>
-                            <div class="card-body">
-                                <p class="card-text">    
-                                    <ul>
-                                            <li>Graphic Designer</li>
-                                            <li>Artist</li>
-                                            <li>Marketing</li>
-                                    </ul>  
-                                </p>
-                            </div>
-                        </div>
-            </div>
-                
-
-            <div class = "col-md-6">   
-
-                    <img src="assets/images/sklogo2.png" width="400px" height="200px" alt="smklogo"/>
-
-                    <!-- width="400" height="200" -->
-                    <!-- <img class="card-img-top" src=resumeLOGO1215copy.tif" type="image/tiff/img>      -->
-            </div>
-
-
-
-             <div class = "col-md-3">  
-                              <div class="alert alert-info" role="alert">
-                                  <a href="portfolio.html">Portfolio</a>
-                              </div>
-
-                              <div class="alert alert-dark" role="alert">
-                                <a href="https://stacieknisley.github.io/HW-Wireframe/">Additional Information</a>
-                              
-                            </div> 
-                             
-                              <div class="alert alert-info" role="alert">
-                                  <a href="contact.html">Contact</a>
-                                <!-- Contact -->
-                              </div>  
-
-                            </div>  
-
-
-
-
-                              
-            </div>
-  
-
+        <!-- Navbar on small screens -->
+        <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+            <a href="#stacie" class="w3-bar-item w3-button">Stacie M. Knisley</a>
+            <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
+            <a href="#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()">PORTFOLIO</a>
+            <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
+            <a href="#" class="w3-bar-item w3-button">SEARCH</a>
+        </div>
     </div>
 
-<!-- third row -->
+    <!-- First Parallax Image with Logo Text -->
+    <div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
+        <div class="w3-display-middle" style="white-space:nowrap;" style="color:rgb(4, 117, 216);">
+            <span class="w3-center w3-padding-large w3-blue w3-xlarge w3-wide w3-animate-opacity">
+                <span class="w3-hide-small"> stacie</span>
+                <span> designs</span>
+        </div>
+    </div>
 
-<div class="jumbotron jumbotron-fluid">
-            <div class="container">
-              <h3>About Stacie M Knisley</h3>
-              <p class="lead">Creates results-oriented solutions that address key marketing objectives through consistent, accurate and high quality work. Communicate a company's brand strengths in a uniquely fresh, memorable and persuasive manner. Professional innovative designer with extensive marketing experience. Strong background in customer service and the management of projects and people. Takes a positive and proactive approach to juggling many priorities.
+    <!-- Container (About Section) -->
+    <div class="w3-content w3-container w3-padding-64" id="about">
+        <h3 class="w3-center">ABOUT</h3>
+        <p class="w3-center"> Stacie M. Knisley </p>
+
+
+
+        <div class="row">
+
+            <div class="column2">
+                <img src="./assets/images/selfport.jpg" alt="Stacie Knisley self portrait" width="300" height="300">
+            </div>
+
+            <div class="column2">
+                <p>
+                    Welcome to my website. I am a Full Stack developer with a vast array of knowledge in front and backend development, responsive
+                    frameworks, databases. Creates results-oriented solutions that address key marketing objectives through
+                    consistent, accurate and high quality work. Communicate a company’s brand strengths in a uniquely fresh,
+                    memorable and persuasive manner. Professional innovative designer with extensive marketing experience.
+                    Strong background in customer service and the management of projects and people. Takes a positive and
+                    proactive approach to addressing priorities.
                 </p>
             </div>
-</div>
-         
-         
-<!-- <p>Creates results-oriented solutions that address key marketing objectives through consistent, accurate and high quality work. Communicate a company’s brand strengths in a uniquely fresh, memorable and persuasive manner. Professional innovative designer with extensive marketing experience. Strong background in customer service and the management of projects and people. Takes a positive and proactive approach to juggling many priorities. -->
-</p>
+
+
+        </div>
+
+
+        <!-- <img src="./assets/images/selfport.jpg" class="w3-center" alt="Stacie Knisley self portrait" width="250" height="250"> -->
+
+        <!-- <div class="w3-row">
+            <div class="w3-col m6 w3-center w3-padding-large">
+                < <p>
+                    <b>
+                        <i class="fa fa-user w3-margin-right"></i>Stacie M. Knisley</b> 
+                </p> -->
+        <!-- <br>
+                <! <img src="./assets/images/selfport.jpg" class="w3-center" alt="Stacie Knisley self portrait" width="250" height="250"> -->
+
+        <!-- class="w3-round w3-image w3-opacity w3-hover-opacity-off" -->
+
+        <!-- "./assets/images/ScreenShotsofHomework/SMKComputerImageSmalla.png" -->
+        <!-- Hide this text on small devices -->
+        <!-- <div class="w3-col m6 w3-hide-small w3-padding-large">
+                <p>
+                </p>
+            </div>
+        </div> -->
+
+
+
+
+
+        <div class="w3-content w3-container w3-padding-64" id="about">
+            <h3 class="w3-center">SKILLS</h3>
+        </div>
+        <!-- <p class="w3-large w3-center w3-padding-16">SKILLS</p> -->
+        <!-- <p class="w3-wide">
+            <i class="fa fa-camera"></i>Photography</p>
+        <div class="w3-light-grey">
+            <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:90%">90%</div>
+        </div>
+        <p class="w3-wide">
+            <i class="fa fa-laptop"></i>Web Design</p>
+        <div class="w3-light-grey">
+            <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:85%">85%</div>
+        </div>
+        <p class="w3-wide">
+            <i class="fa fa-photo"></i>Photoshop</p>
+        <div class="w3-light-grey">
+            <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:75%">75%</div>
+        </div> -->
+    </div>
+    <div>
+        <div>
+            <div class="rows">
+                <div class="columnskills">
+                    <img src="./assets/images/ScreenShotsofHomework/html.png" style="width:25%" alt="html">
+                </div>
+                <div class="columnskills">
+                    <img src="./assets/images/ScreenShotsofHomework/CSS3.png" style="width:25%" alt="CSS3">
+                </div>
+                <div class="columnskills">
+                    <img src="./assets/images/ScreenShotsofHomework/bootstrap.png" style="width:25%" alt="bootstrap">
+                </div>
+                <div class="columnskills">
+                    <img src="./assets/images/ScreenShotsofHomework/javascript.png" style="width:25%" alt="javascript">
+                </div>
+            </div>
+            <div class="rows">
+                <div class="columnskills">
+                    <img src="./assets/images/ScreenShotsofHomework/jquery.png" style="width:25%" alt="juery">
+                </div>
+                <div class="columnskills">
+                    <img src="./assets/images/ScreenShotsofHomework/mongodb.png" style="width:25%" alt="monogodb">
+                </div>
+                <div class="columnskills">
+                    <img src="./assets/images/ScreenShotsofHomework/mysql.png" style="width:25%" alt="mysql">
+                </div>
+                <div class="columnskills">
+                    <img src="./assets/images/ScreenShotsofHomework/nodejs.png" style="width:25%" alt="nodejs">
+                </div>
+            </div>
+            <div class="rows">
+                <div class="columnskills">
+                    <img src="./assets/images/ScreenShotsofHomework/github.png" style="width:25%" alt="github">
+                </div>
+                <div class="columnskills">
+                    <img src="./assets/images/ScreenShotsofHomework/adobeai.png" style="width:25%" alt="adobeai">
+                </div>
+                <div class="columnskills">
+                    <img src="./assets/images/ScreenShotsofHomework/adobeps.png" style="width:25%" alt="adobeps">
+                </div>
+                <div class="columnskills">
+                    <img src="./assets/images/ScreenShotsofHomework/adobein.png" style="width:25%" alt="adobein">
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+
+    <!-- Second Parallax Image with Portfolio Text -->
+    <div class="bgimg-2 w3-display-container w3-opacity-min">
+        <div class="w3-display-middle">
+            <span class="w3-xxlarge w3-text-white w3-wide">PORTFOLIO</span>
+        </div>
+    </div>
+
+    <!-- Container (Portfolio Section) -->
+    <div class="w3-content w3-container w3-padding-64" id="portfolio">
+        <!-- <h3 class="w3-center">PORTFOLIO</h3> -->
+        <!-- <p class="w3-center">
+            <! <em>Here are some apps I have created. -->
+        <!-- <br> Click on the images to make them bigger</em> -->
+        <!-- </p>  -->
+        <!-- <br>
+        <div class="w3-content w3-container w3-padding-64" id="portfolio">
+            <h3 class="w3-center">PORTFOLIO</h3>
+        </div> -->
+
+        <div class="row">
+            <div class="column3">
+                <img class="card-img-top" src="./assets/images/ScreenShotsofHomework/3PsychicLetterGameport.png" style="width:60%" alt="Psychic Game">
+                <div class="card-body">
+                    <h5 class="card-title">Psychic Letter Game</h5>
+                    <a href="https://stacieknisley.github.io/Psychic-Game/"> Click to Play</a>
+                </div>
+            </div>
+            <div class="column3">
+                <img class="card-img-top" src="./assets/images/ScreenShotsofHomework/4CrystalGameport.png" style="width:60%" alt="Crystal Game">
+                <div class="card-body">
+                    <h5 class="card-title">Crystal Game</h5>
+                    <a href="https://stacieknisley.github.io/Simple_Crystal_Game/"> Click to Play</a>
+                </div>
+            </div>
+            <div class="column3">
+                <img class="card-img-top" src="./assets/images/ScreenShotsofHomework/5BeatlesTriviaGameport.png" style="width:60%" alt="Beatles Trivia Game">
+                <div class="card-body">
+                    <h5 class="card-title">Beatles Trivia Game</h5>
+                    <a href="https://stacieknisley.github.io/TriviaGame/"> Click to Play</a>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div class="column3">
+                <img class="card-img-top" src="./assets/images/ScreenShotsofHomework/6giphtasticport.png" style="width:60%" alt="Giphtastic">
+                <div class="card-body">
+                    <h5 class="card-title">Giphtastic</h5>
+                    <a href="https://stacieknisley.github.io/GifTastic/"> Click to Play Giphtastic</a>
+                </div>
+            </div>
+            <div class="column3">
+                <img class="card-img-top" src="./assets/images/ScreenShotsofHomework/7trainsdataport.png" style="width:60%" alt="Train Data">
+                <div class="card-body">
+                    <h5 class="card-title">Train Data Persistence</h5>
+                    <a href="https://stacieknisley.github.io/Data-Persistence/"> Click to Find a Train</a>
+                </div>
+            </div>
+            <div class="column3">
+                <img class="card-img-top" src="./assets/images/ScreenShotsofHomework/8clelivemusicport.png" style="width:60%" alt="Cleveland Live Music">
+                <div class="card-body">
+                    <h5 class="card-title">Cleveland Live Music</h5>
+                    <a href="https://stacieknisley.github.io/clelivemusic/"> Click to Find Live Music</a>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div class="column3">
+                <img class="card-img-top" src="./assets/images/ScreenShotsofHomework/10liriappport.png" style="width:60%" alt="Liri App">
+                <div class="card-body">
+                    <h5 class="card-title">Liri App</h5>
+                    <a href="https://github.com/stacieknisley/liri_node_app/"> Click to Play</a>
+                </div>
+            </div>
+            <div class="column3">
+                <img class="card-img-top" src="./assets/images/ScreenShotsofHomework/11mySQLportfolioImageport.png" style="width:60%" alt="Bamazon">
+                <div class="card-body">
+                    <h5 class="card-title">My SQL Bamazon</h5>
+                    <a href="https://github.com/stacieknisley/Nodejs-MySQL"> Click to Shop</a>
+                </div>
+            </div>
+            <div class="column3">
+                <img class="card-img-top" src="./assets/images/ScreenShotsofHomework/12friendfinderport.png" style="width:60%" alt="Friend Finder">
+                <div class="card-body">
+                    <h5 class="card-title">Friend Finder</h5>
+                    <a href="https://github.com/stacieknisley/FriendFinder/"> Click to Find a Friend</a>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div class="column3">
+                <img class="card-img-top" src="./assets/images/ScreenShotsofHomework/13burgerport.png" style="width:60%" alt="Burger App">
+                <div class="card-body">
+                    <h5 class="card-title">Burger App</h5>
+                    <a href="https://github.com/stacieknisley/Burger"> Click to Pick a Burger</a>
+                </div>
+            </div>
+            <div class="column3">
+                <img class="card-img-top" src="./assets/images/ScreenShotsofHomework/14Proj2Gitbetport.png" style="width:60%" alt="Gitbet">
+                <div class="card-body">
+                    <h5 class="card-title">Gitbet</h5>
+                    <a href="https://gentle-forest-28497.herokuapp.com/"> Make a Gitbet</a>
+                </div>
+            </div>
+            <!-- <div class="column">
+                <img class="card-img-top" src="./assets/images/ScreenShotsofHomework/12friendfinderport.png" style="width:60%" alt="Friend Finder">
+                <div class="card-body">
+                    <h5 class="card-title">Friend Finder</h5>
+                    <a href="https://github.com/stacieknisley/FriendFinder/"> Click to Play</a>
+                </div>
+            </div> -->
+        </div>
+
+        <!-- Modal for full size images on click-->
+        <!-- <div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+            <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image">
+                <i class="fa fa-remove"></i>
+            </span>
+            <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+                <img id="img01" class="w3-image">
+                <p id="caption" class="w3-opacity w3-large"></p>
+            </div>
+        </div> -->
+
+        <!-- Third Parallax Image with Portfolio Text -->
+
+
+        <div class="w3-content w3-container w3-padding-64" id="contact">
+            <!-- <h3 class="w3-center">CONTACT</h3> -->
+            <div class="bgimg-3 w3-display-container w3-opacity-min">
+                <!-- <h3 class="w3-center">CONTACT</h3> -->
+                <div class="w3-display-middle">
+
+                    <h3 class="w3-xxlarge w3-text-white">CONTACT</h3>
+                    <!-- <span class= </span> h3 class="w3-center">PORTFOLIO</h3class="w3-center">PORTFOLIO</h3>CONTACT</span> -->
+                </div>
+            </div>
+
+            <!-- Container (Contact Section) -->
+            <br>
+            <br>
+
+            <div class="container">
+
+                <!-- <h3 class="w3-center">CONTACT</h3> -->
+                <div class=r ow>
+                    <div class="col-md-12">
+
+                        <div class="alert alert-dark" role="alert">
+                            stacieknisley@juno.com
+                        </div>
+
+                        <div class="alert alert-info" role="alert">
+                            <a href="https://stacieknisley.github.io">stacieknisley.github.io</a>
+
+                        </div>
+
+                        <div class="alert alert-dark" role="alert">
+                            <a href="https://www.linkedin.com/in/stacieknisley/">linkin.com/in/stacieknisley</a>
+                        </div>
+                        <br>
+
+                        <!--                               
+                                  <div class="dropdown">
+                                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                      Professional Information
+                                    </button>
+                                    <div class="alert alert-info" role="alert">
+                                      <a href="portfolio.html">Stacie Knisley Professional Information</a>
+                                  </div>
+                                    
+                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                      <a class="dropdown-item" href="#">docId</a>
+                                      <a class="dropdown-item" href="#">Another action</a>
+                                      <? <a class="dropdown-item" href="#">Something else here</a> -->
+                        <!-- </div> -->
+
+
+
+
+                        <!-- <div class="alert alert-info" role="alert"> -->
+                        <!-- <a href src= "assets/images/ScreenShotsofHomework/1Wireframe.png">Stacie M. Knisley professional information</a> -->
+
+                    </div>
+
+
+                </div>
+
+
+            </div>
 
 
 
@@ -99,8 +530,79 @@
 
 
 
+
+
+
+            <!-- Footer -->
+            <footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
+                <a href="#home" class="w3-button w3-light-grey">
+                    <i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+                <div class="w3-xlarge w3-section">
+                    <!-- <i class="fa fa-facebook-official w3-hover-opacity"></i> -->
+                    <i class="fa fa-instagram w3-hover-opacity"></i>
+                    <!-- <i class="fa fa-snapchat w3-hover-opacity"></i> -->
+                    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+                    <i class="fa fa-twitter w3-hover-opacity"></i>
+                    <i class="fa fa-linkedin w3-hover-opacity"></i>
+                </div>
+
+
+        </div>
+
+        </footer>
+
+        <!-- Add Google Maps -->
+        <script>
+            // function myMap() {
+            //     myCenter = new google.maps.LatLng(41.878114, -87.629798);
+            //     var mapOptions = {
+            //         center: myCenter,
+            //         zoom: 12, scrollwheel: false, draggable: false,
+            //         mapTypeId: google.maps.MapTypeId.ROADMAP
+            //     };
+            //     var map = new google.maps.Map(document.getElementById("googleMap"), mapOptions);
+
+            //     var marker = new google.maps.Marker({
+            //         position: myCenter,
+            //     });
+            //     marker.setMap(map);
+            // }
+
+            // Modal Image Gallery
+            function onClick(element) {
+                document.getElementById("img01").src = element.src;
+                document.getElementById("modal01").style.display = "block";
+                var captionText = document.getElementById("caption");
+                captionText.innerHTML = element.alt;
+            }
+
+            // Change style of navbar on scroll
+            window.onscroll = function () { myFunction() };
+            function myFunction() {
+                var navbar = document.getElementById("myNavbar");
+                if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+                    navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
+                } else {
+                    navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
+                }
+            }
+
+            // Used to toggle the menu on small screens when clicking on the menu button
+            function toggleFunction() {
+                var x = document.getElementById("navDemo");
+                if (x.className.indexOf("w3-show") == -1) {
+                    x.className += " w3-show";
+                } else {
+                    x.className = x.className.replace(" w3-show", "");
+                }
+            }
+        </script>
+        <!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap"></script> -->
+        <!--
+To use this code on your website, get a free API key from Google.
+Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
+-->
 
 </body>
-
 
 </html>
