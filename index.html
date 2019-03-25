@@ -6,8 +6,20 @@
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+<!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
     crossorigin="anonymous">
+
+
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
+
+<link href="assets/css/style.css" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
 <style>
     body,
     h1,
@@ -94,12 +106,24 @@
     }
 
     .column2 {
-        float: flex;
-        width: 50%;
+        float: right;
+        width: 60%;
+        padding: 10px;
+    }
+
+    .column2logos {
+        float: right;
+        width: 30%;
         padding: 15px;
     }
 
     .column3 {
+        float: right;
+        width: 40%;
+        padding: 10px;
+    }
+
+    .column3logos {
         float: right;
         width: 30%;
         padding: 15px;
@@ -125,8 +149,12 @@
         clear: both;
     }
 
+    .service-box {
+        color: rgb(4, 117, 216);
 
+    }
 
+    /* .section {} */
 
     /* Style the images inside the grid */
 
@@ -195,12 +223,7 @@
 
 
         <div class="row">
-
-            <div class="column2">
-                <img src="./assets/images/selfport.jpg" alt="Stacie Knisley self portrait" width="300" height="300">
-            </div>
-
-            <div class="column2">
+            <div class="column3">
                 <p>
                     Welcome to my website. I am a Full Stack developer with a vast array of knowledge in front and backend development, responsive
                     frameworks, databases. Creates results-oriented solutions that address key marketing objectives through
@@ -209,6 +232,9 @@
                     Strong background in customer service and the management of projects and people. Takes a positive and
                     proactive approach to addressing priorities.
                 </p>
+            </div>
+            <div class="column2">
+                <img src="./assets/images/selfport.jpg" alt="Stacie Knisley self portrait" width="300" height="300">
             </div>
 
 
@@ -260,314 +286,444 @@
             <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:75%">75%</div>
         </div> -->
     </div>
-    <div>
-        <div>
-            <div class="rows">
-                <div class="columnskills">
-                    <img src="./assets/images/ScreenShotsofHomework/html.png" style="width:25%" alt="html">
-                </div>
-                <div class="columnskills">
-                    <img src="./assets/images/ScreenShotsofHomework/CSS3.png" style="width:25%" alt="CSS3">
-                </div>
-                <div class="columnskills">
-                    <img src="./assets/images/ScreenShotsofHomework/bootstrap.png" style="width:25%" alt="bootstrap">
-                </div>
-                <div class="columnskills">
-                    <img src="./assets/images/ScreenShotsofHomework/javascript.png" style="width:25%" alt="javascript">
-                </div>
-            </div>
-            <div class="rows">
-                <div class="columnskills">
-                    <img src="./assets/images/ScreenShotsofHomework/jquery.png" style="width:25%" alt="juery">
-                </div>
-                <div class="columnskills">
-                    <img src="./assets/images/ScreenShotsofHomework/mongodb.png" style="width:25%" alt="monogodb">
-                </div>
-                <div class="columnskills">
-                    <img src="./assets/images/ScreenShotsofHomework/mysql.png" style="width:25%" alt="mysql">
-                </div>
-                <div class="columnskills">
-                    <img src="./assets/images/ScreenShotsofHomework/nodejs.png" style="width:25%" alt="nodejs">
-                </div>
-            </div>
-            <div class="rows">
-                <div class="columnskills">
-                    <img src="./assets/images/ScreenShotsofHomework/github.png" style="width:25%" alt="github">
-                </div>
-                <div class="columnskills">
-                    <img src="./assets/images/ScreenShotsofHomework/adobeai.png" style="width:25%" alt="adobeai">
-                </div>
-                <div class="columnskills">
-                    <img src="./assets/images/ScreenShotsofHomework/adobeps.png" style="width:25%" alt="adobeps">
-                </div>
-                <div class="columnskills">
-                    <img src="./assets/images/ScreenShotsofHomework/adobein.png" style="width:25%" alt="adobein">
-                </div>
-            </div>
+    <!-- 1ST ROW OF TECH ICONS -->
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3 col-md-6 text-center">
+                <div class="service-box">
 
+                    <img src="./assets/images/ScreenShotsofHomework/html1.png " style="width:25%" alt="html">
+                    <!-- <i class="fab fa-html5"></i> -->
+                    <!-- <svg aria-hidden="true" data-prefix="fab" data-icon="html5" class=" svg-inline-fa fa-html5 fa-w-12
+                        " role="img " xmlns="http://www.w3.org/2000/svg " viewBox="0 0 384 512 ">
+                        <path fill="currentColor " d="M0 32l34.9 395.8L191.5 480l157.6-52.2L384 32H0zm308.2 127.9H124.4l4.1
+                        49.4h175.6l-13.6 148.4-97.9 27v.3h-1.1l-98.7-27.3-6-75.8h47.7L138 320l53.5 14.5 53.7-14.5 6-62.2H84.3L71.5
+                        112.2h241.1l-4.4 47.7z "></path>
+                    </svg> -->
+                    <!-- <h3>HTML 5</h3> -->
+                    <p class="text-muted ">HTML 5</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 text-center ">
+                <div class="service-box ">
+                    <img src="./assets/images/ScreenShotsofHomework/CSS31.png " style="width:25% " alt="CSS3 ">
+
+                    <!-- <i class="fa fa-4x fa-paper-plane text-primary sr-icons "></i> -->
+                    <!-- <svg aria-hidden="true" data-prefix="fab" data-icon="css3-alt" class="svg-inline--fa fa-css3-alt fa-w-12" role="img" xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 384 512">
+                        <path fill="currentColor" d="M0 32l34.9 395.8L192 480l157.1-52.2L384 32H0zm313.1 80l-4.8 47.3L193 208.6l-.3.1h111.5l-12.8 146.6-98.2 28.7-98.8-29.2-6.4-73.9h48.9l3.2 38.3 52.6 13.3 54.7-15.4 3.7-61.6-166.3-.5v-.1l-.2.1-3.6-46.3L193.1 162l6.5-2.7H76.7L70.9 112h242.2z"></path>
+                    </svg> -->
+                    <!-- <h3>CSS 3</h3> -->
+                    <p class="text-muted ">CSS 3</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 text-center ">
+                <div class="service-box ">
+                    <img src="./assets/images/ScreenShotsofHomework/bootstrap1.png " style="width:25% " alt="bootstrap ">
+                    <!-- <i class="fa fa-4x fa-newspaper-o text-primary sr-icons "></i> -->
+                    <!-- <h3>Bootstrap</h3> -->
+                    <p class="text-muted ">Bootstrap</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 text-center ">
+                <div class="service-box ">
+                    <img src="./assets/images/ScreenShotsofHomework/javascript1.png " style="width:25% " alt="javascript1">
+                    <!-- <i class="fa fa-4x fa-heart text-primary sr-icons "></i> -->
+                    <!-- <h3>Made with Love</h3> -->
+                    <p class="text-muted ">JavaScript</p>
+                </div>
+            </div>
         </div>
     </div>
+
     <br>
     <br>
+
+    <!-- 2ND ROW OF TECH ICONS -->
+    <div class="container ">
+        <div class="row ">
+            <div class="col-lg-3 col-md-6 text-center ">
+                <div class="service-box ">
+                    <img src="./assets/images/ScreenShotsofHomework/jquery1.png " style="width:25% " alt="jQuery">
+                    <!-- <i class="fa fa-4x fa-paper-plane text-primary sr-icons "></i> -->
+                    <!-- <h3>Sturdy Templates</h3> -->
+                    <p class=" text-muted ">jQuery</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 text-center ">
+                <div class="service-box ">
+                    <img src="./assets/images/ScreenShotsofHomework/mongodb1.png " style="width:25% " alt="MongoDB">
+                    <!-- <i class="fa fa-4x fa-paper-plane text-primary sr-icons "></i> -->
+                    <!-- <h3>Ready to Ship</h3> -->
+                    <p class="text-muted ">MongoDB</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 text-center ">
+                <div class="service-box ">
+                    <img src="./assets/images/ScreenShotsofHomework/mysql1.png " style="width:25% " alt="MySQL">
+                    <!-- <i class="fa fa-4x fa-newspaper-o text-primary sr-icons "></i> -->
+                    <!-- <h3>Up to Date</h3> -->
+                    <p class="text-muted ">MySQL</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 text-center ">
+                <div class="service-box ">
+                    <img src="./assets/images/ScreenShotsofHomework/nodejs1.png " style="width:25% " alt="Nodejs">
+                    <!-- <i class="fa fa-4x fa-heart text-primary sr-icons "></i> -->
+                    <!-- <h3>Made with Love</h3> -->
+                    <p class="text-muted ">Node.js</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <br>
     <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
+
+    <!-- 3RD ROW OF TECH ICONS -->
+    <div class="container ">
+        <div class="row ">
+            <div class="col-lg-3 col-md-6 text-center ">
+                <div class="service-box ">
+                    <img src="./assets/images/ScreenShotsofHomework/github1.png " style="width:25% " alt="GitHub">
+                    <!-- <i class="fa fa-4x fa-diamond text-primary sr-icons "></i> -->
+                    <!-- <h3>Sturdy Templates</h3> -->
+                    <p class="text-muted ">GitHub</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 text-center ">
+                <div class="service-box ">
+                    <img src="./assets/images/ScreenShotsofHomework/adobeai1.png " style="width:25% " alt="Adobe Illustrator">
+                    <!-- <i class="fa fa-4x fa-paper-plane text-primary sr-icons "></i> -->
+                    <!-- <h3>Ready to Ship</h3> -->
+                    <p class="text-muted ">Adobe Illustrator </p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 text-center ">
+                <div class="service-box ">
+                    <img src="./assets/images/ScreenShotsofHomework/adobeps1.png " style="width:25% " alt="Adobe Photoshop">
+                    <!-- <i class="fa fa-4x fa-newspaper-o text-primary sr-icons "></i> -->
+                    <!-- <h3>Up to Date</h3> -->
+                    <p class="text-muted ">Adobe Photoshop </p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 text-center ">
+                <div class="service-box ">
+                    <img src="./assets/images/ScreenShotsofHomework/adobein1.png " style="width:25% " alt="Adobe InDesign">
+                    <!-- <i class="fa fa-4x fa-heart text-primary sr-icons "></i> -->
+                    <!-- <h3>Made with Love</h3> -->
+                    <p class="text-muted ">Adobe InDesign</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- <div class="w3-content w3-container w3-padding-64" id="about">
+        <h3 class="w3-center">ABOUT</h3>
+        <p class="w3-center"> Stacie M. Knisley </p> -->
+
+    <!-- 
+            <!-Container (Portfolio Section) -->
+    <!-- <div class="w3-content w3-container w3-padding-64" id="portfolio">
+        <h3 class="w3-center">PORTFOLIO</h3>
+        <p class="w3-center">
+            <!-<em>Here are some of my latest lorem work ipsum tipsum. -->
+    <!-- <br> Click on the images to make them bigger</em> -->
+    <!-- </p>
+    <br> -->
+
+    <!-- <div class="w3-content w3-container w3-padding-64 " id="portfolio "> -->
+    <!-- <h3 class="w3-center ">PORTFOLIO</h3> -->
+    <!-- </div> -->
+    <!-- <h3 class="w3-center ">PORTFOLIO</h3> -->
+    <!-- <!- <! <p class="w3-center ">
+                <! <em>Here are some apps I have created. -->
+    <!-- <br> Click on the images to make them bigger</em> -->
+    <!-- </p>  -->
+    <!-- <br> -->
+    <!-- <div class="w3-content w3-container w3-padding-64 " id="portfolio "> -->
 
 
     <!-- Second Parallax Image with Portfolio Text -->
-    <div class="bgimg-2 w3-display-container w3-opacity-min">
+
+    <!-- <div class="bgimg-2 w3-display-container w3-opacity-min">
         <div class="w3-display-middle">
             <span class="w3-xxlarge w3-text-white w3-wide">PORTFOLIO</span>
         </div>
     </div>
 
+    <div class="bgimg-2 w3-display-container w3-opacity-min">
+        <div class="w3-display-middle">
+            <span class="w3-xxlarge w3-text-white w3-wide">PORTFOLIO</span>
+        </div>
+    </div> -->
+
     <!-- Container (Portfolio Section) -->
     <div class="w3-content w3-container w3-padding-64" id="portfolio">
-        <!-- <h3 class="w3-center">PORTFOLIO</h3> -->
-        <!-- <p class="w3-center">
-            <! <em>Here are some apps I have created. -->
-        <!-- <br> Click on the images to make them bigger</em> -->
-        <!-- </p>  -->
-        <!-- <br>
+        <!-- <h3 class="w3-center">MY WORK</h3>
+        <p class="w3-center">
+            <em>Here are some of my latest lorem work ipsum tipsum.
+                <br> Click on the images to make them bigger</em>
+        </p> -->
+        <br>
+
+        <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
+        <div class="bgimg-2 w3-display-container w3-opacity-min">
+            <div class="w3-display-middle">
+                <span class="w3-xxlarge w3-text-white w3-wide">PORTFOLIO</span>
+            </div>
+        </div>
+
+        <!-- Container (Portfolio Section) -->
         <div class="w3-content w3-container w3-padding-64" id="portfolio">
-            <h3 class="w3-center">PORTFOLIO</h3>
-        </div> -->
+            <h3 class="w3-center">MY WORK</h3>
+            <p class="w3-center">
+                <em>Here are some of my latest apps.
+                    <!-- <br> Click on the images to make them bigger</em> -->
+            </p>
+            <br>
 
-        <div class="row">
-            <div class="column3">
-                <img class="card-img-top" src="./assets/images/ScreenShotsofHomework/3PsychicLetterGameport.png" style="width:60%" alt="Psychic Game">
-                <div class="card-body">
-                    <h5 class="card-title">Psychic Letter Game</h5>
-                    <a href="https://stacieknisley.github.io/Psychic-Game/"> Click to Play</a>
+            <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
+            <div class="w3-row-padding w3-center">
+                <div class="w3-col m3">
+                    <img src="./assets/images/ScreenShotsofHomework/8clelivemusicport.png " style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
+                        alt="Cleveland Live Music">
+                    <div class="card-body ">
+                        <h5 class="card-title ">Cleveland Live Music</h5>
+                        <a href="https://stacieknisley.github.io/clelivemusic/ "> Click to Find Live Music</a>
+                    </div>
+                </div>
+
+                <div class="w3-col m3">
+                    <img src="./assets/images/ScreenShotsofHomework/14Proj2Gitbetport.png " style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
+                        alt="Gitbet">
+                    <div class="card-body ">
+                        <h5 class="card-title ">Gitbet</h5>
+                        <a href="https://gentle-forest-28497.herokuapp.com/ "> Make a Gitbet</a>
+                    </div>
+                </div>
+
+                <div class="w3-col m3">
+                    <img src="./assets/images/ScreenShotsofHomework/Proj3VRidgeport.png " style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
+                        alt="VRidge">
+                    <div class="card-body ">
+                        <h5 class="card-title ">VRidge</h5>
+                        <a href="https://v-ridge.herokuapp.com/ "> Turn Your Fridge into a "Smart Fridge"</a>
+                    </div>
+                </div>
+
+                <div class="w3-col m3">
+                    <img src="./assets/images/ScreenShotsofHomework/3PsychicLetterGameport.png " style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
+                        alt="Psychic Game">
+                    <div class="card-body ">
+                        <h5 class="card-title ">Psychic Letter Game</h5>
+                        <a href="https://stacieknisley.github.io/Psychic-Game/ "> Click to Play</a>
+                    </div>
                 </div>
             </div>
-            <div class="column3">
-                <img class="card-img-top" src="./assets/images/ScreenShotsofHomework/4CrystalGameport.png" style="width:60%" alt="Crystal Game">
-                <div class="card-body">
-                    <h5 class="card-title">Crystal Game</h5>
-                    <a href="https://stacieknisley.github.io/Simple_Crystal_Game/"> Click to Play</a>
+
+            <div class="w3-row-padding w3-center w3-section">
+                <div class="w3-col m3">
+                    <img src="./assets/images/ScreenShotsofHomework/5BeatlesTriviaGameport.png " style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
+                        alt="Beatles Trivia Game">
+                    <div class="card-body ">
+                        <h5 class="card-title ">Beatles Trivia Game</h5>
+                        <a href="https://stacieknisley.github.io/TriviaGame/ "> Click to Play</a>
+                    </div>
                 </div>
-            </div>
-            <div class="column3">
-                <img class="card-img-top" src="./assets/images/ScreenShotsofHomework/5BeatlesTriviaGameport.png" style="width:60%" alt="Beatles Trivia Game">
-                <div class="card-body">
-                    <h5 class="card-title">Beatles Trivia Game</h5>
-                    <a href="https://stacieknisley.github.io/TriviaGame/"> Click to Play</a>
+
+                <div class="w3-col m3">
+                    <img src="./assets/images/ScreenShotsofHomework/4CrystalGameport.png " style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
+                        alt="Crystal Game">
+                    <div class="card-body ">
+                        <h5 class="card-title ">Crystal Game</h5>
+                        <a href="https://stacieknisley.github.io/Simple_Crystal_Game/ "> Click to Play</a>
+                    </div>
                 </div>
+
+                <div class="w3-col m3">
+                    <img src="./assets/images/ScreenShotsofHomework/13burgerport.png " style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
+                        alt="Burger App">
+                    <div class="card-body ">
+                        <h5 class="card-title ">Burger App</h5>
+                        <a href="https://github.com/stacieknisley/Burger "> Click to Pick a Burger</a>
+                    </div>
+                </div>
+
+                <div class="w3-col m3">
+                    <img src="./assets/images/ScreenShotsofHomework/6giphtasticport.png " style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
+                        alt="Giphtastic">
+                    <div class="card-body ">
+                        <h5 class="card-title ">Giphtastic</h5>
+                        <a href="https://stacieknisley.github.io/GifTastic/ "> Click to Play Giphtastic</a>
+                    </div>
+                </div>
+                <!-- <button class="w3-button w3-padding-large w3-light-grey" style="margin-top:64px">LOAD MORE</button> -->
             </div>
         </div>
-
-
-        <div class="row">
-            <div class="column3">
-                <img class="card-img-top" src="./assets/images/ScreenShotsofHomework/6giphtasticport.png" style="width:60%" alt="Giphtastic">
-                <div class="card-body">
-                    <h5 class="card-title">Giphtastic</h5>
-                    <a href="https://stacieknisley.github.io/GifTastic/"> Click to Play Giphtastic</a>
-                </div>
-            </div>
-            <div class="column3">
-                <img class="card-img-top" src="./assets/images/ScreenShotsofHomework/7trainsdataport.png" style="width:60%" alt="Train Data">
-                <div class="card-body">
-                    <h5 class="card-title">Train Data Persistence</h5>
-                    <a href="https://stacieknisley.github.io/Data-Persistence/"> Click to Find a Train</a>
-                </div>
-            </div>
-            <div class="column3">
-                <img class="card-img-top" src="./assets/images/ScreenShotsofHomework/8clelivemusicport.png" style="width:60%" alt="Cleveland Live Music">
-                <div class="card-body">
-                    <h5 class="card-title">Cleveland Live Music</h5>
-                    <a href="https://stacieknisley.github.io/clelivemusic/"> Click to Find Live Music</a>
-                </div>
-            </div>
-        </div>
-
-
-        <div class="row">
-            <div class="column3">
-                <img class="card-img-top" src="./assets/images/ScreenShotsofHomework/10liriappport.png" style="width:60%" alt="Liri App">
-                <div class="card-body">
-                    <h5 class="card-title">Liri App</h5>
-                    <a href="https://github.com/stacieknisley/liri_node_app/"> Click to Play</a>
-                </div>
-            </div>
-            <div class="column3">
-                <img class="card-img-top" src="./assets/images/ScreenShotsofHomework/11mySQLportfolioImageport.png" style="width:60%" alt="Bamazon">
-                <div class="card-body">
-                    <h5 class="card-title">My SQL Bamazon</h5>
-                    <a href="https://github.com/stacieknisley/Nodejs-MySQL"> Click to Shop</a>
-                </div>
-            </div>
-            <div class="column3">
-                <img class="card-img-top" src="./assets/images/ScreenShotsofHomework/12friendfinderport.png" style="width:60%" alt="Friend Finder">
-                <div class="card-body">
-                    <h5 class="card-title">Friend Finder</h5>
-                    <a href="https://github.com/stacieknisley/FriendFinder/"> Click to Find a Friend</a>
-                </div>
-            </div>
-        </div>
-
-
-        <div class="row">
-            <div class="column3">
-                <img class="card-img-top" src="./assets/images/ScreenShotsofHomework/13burgerport.png" style="width:60%" alt="Burger App">
-                <div class="card-body">
-                    <h5 class="card-title">Burger App</h5>
-                    <a href="https://github.com/stacieknisley/Burger"> Click to Pick a Burger</a>
-                </div>
-            </div>
-            <div class="column3">
-                <img class="card-img-top" src="./assets/images/ScreenShotsofHomework/14Proj2Gitbetport.png" style="width:60%" alt="Gitbet">
-                <div class="card-body">
-                    <h5 class="card-title">Gitbet</h5>
-                    <a href="https://gentle-forest-28497.herokuapp.com/"> Make a Gitbet</a>
-                </div>
-            </div>
-            <div class="column">
-                <img class="card-img-top" src="./assets/images/ScreenShotsofHomework/18mongoport.png" style="width:60%" alt="Friend Finder">
-                <div class="card-body">
-                    <h5 class="card-title">CLeveland.com Scraper</h5>
-                    <a href="https://evening-tundra-64084.herokuapp.com/"> Click to see CLE news.</a>
-                </div>
-            </div>
-        </div>
-
-
-
-        <div class="row">
-            <div class="column3">
-                <img class="card-img-top" src="./assets/images/ScreenShotsofHomework/NYTReactSearch.png" style="width:60%" alt="Burger App">
-                <div class="card-body">
-                    <h5 class="card-title">New York Times Article Search</h5>
-                    <a href="https://dashboard.heroku.com/apps/warm-anchorage-77307/"> Click to search the NY Times </a>
-                </div>
-            </div>
-            <div class="column3">
-                <img class="card-img-top" src="./assets/images/ScreenShotsofHomework/Proj3VRidgeport.png" style="width:60%" alt="Gitbet">
-                <div class="card-body">
-                    <h5 class="card-title">VRidge</h5>
-                    <a href="https://v-ridge.herokuapp.com/"> Turn Fridge into a "Smart Fridge"</a>
-                </div>
-            </div>
-            <div class="column">
-                <!-- <img class="card-img-top" src="./assets/images/ScreenShotsofHomework/18mongoport.png" style="width:60%" alt="Friend Finder">
-                        <div class="card-body">
-                            <h5 class="card-title">CLeveland.com Scraper</h5>
-                            <a href="https://evening-tundra-64084.herokuapp.com/"> Click to see CLE news.</a>
-                        </div> -->
-            </div>
-        </div>
-
-
-
-
-
-
-
 
 
         <!-- 
-           
-            <div class="column">
-                <img class="card-img-top" src="./assets/images/ScreenShotsofHomework/NYTReactSearch.png" style="width:60%" alt="NY Times Search">
-                <div class="card-body">
-                    <h5 class="card-title">New York Times Article Search</h5>
-                    <a href="https://dashboard.heroku.com/apps/warm-anchorage-77307/"> Click to search the NY Times.</a>
-                </div>
+         <div class="bgimg-2 w3-display-container w3-opacity-min ">
+            <div class="w3-display-middle ">
+                <span class="w3-xxlarge w3-text-white w3-wide ">PORTFOLIO</span>
             </div>
         </div> -->
 
 
+        <!-- <div class="row ">
+            <div class="column3 ">
+
+
+            </div> -->
 
 
 
-
-
-
+        <!-- Page Content -->
 
 
 
 
         <!-- Third Parallax Image with Portfolio Text -->
 
+        <!-- 
+   <div class="w3-content w3-container w3-padding-64" id="contact"> 
+        <h3 class="w3-center">WHERE I WORK</h3>
+        <p class="w3-center">
+            <em>I'd love your feedback!</em>
+        </p> -->
+
+        <!-- <div class="w3-row w3-padding-32 w3-section">
+            <div class="w3-col m4 w3-container">
+                <img src="/w3images/map.jpg" class="w3-image w3-round" style="width:100%">
+            </div>
+            <div class="w3-col m8 w3-panel">
+                <div class="w3-large w3-margin-bottom">
+                    <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Chicago, US
+                    <br>
+                    <i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Phone: +00 151515
+                    <br>
+                    <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email: mail@mail.com
+                    <br>
+                </div> -->
+        <!-- <p>Swing by for a cup of
+            <i class="fa fa-coffee"></i>, or leave me a note:</p>
+        <form action="/action_page.php" target="_blank">
+            <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+                <div class="w3-half">
+                    <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
+                </div>
+                <div class="w3-half">
+                    <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
+                </div>
+            </div>
+            <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
+            <button class="w3-button w3-black w3-right w3-section" type="submit">
+                <i class="fa fa-paper-plane"></i> SEND MESSAGE
+            </button>
+        </form>
+    </div>
+    </div>
+    </div> 
+
+
+
+        <div class="w3-content w3-container w3-padding-64 " id="contact ">
+
+            <div class="w3-content w3-container w3-padding-64" id="portfolio"> -->
+        <!-- <h3 class="w3-center">PORTFOLIO</h3>
+        <p class="w3-center"> -->
 
         <div class="w3-content w3-container w3-padding-64" id="contact">
-            <!-- <h3 class="w3-center">CONTACT</h3> -->
-            <div class="bgimg-3 w3-display-container w3-opacity-min">
-                <!-- <h3 class="w3-center">CONTACT</h3> -->
-                <div class="w3-display-middle">
+            <!-- <h3 class="w3-center">WHERE I WORK</h3> -->
+            <!-- <p class="w3-center"> -->
+            <!-- <em>I'd love your feedback!</em> -->
+            <!-- </p> -->
 
-                    <h3 class="w3-xxlarge w3-text-white">CONTACT</h3>
-                    <!-- <span class= </span> h3 class="w3-center">PORTFOLIO</h3class="w3-center">PORTFOLIO</h3>CONTACT</span> -->
+            <div class="bgimg-2 w3-display-container w3-opacity-min ">
+                <div class="w3-display-middle ">
+                    <!-- <span class="w3-xxlarge w3-text-white w3-wide ">CONTACT</span> -->
+                    <span class="w3-xxlarge w3-text-white w3-wide">CONTACT</span>
                 </div>
             </div>
 
-            <!-- Container (Contact Section) -->
+            <!-- <div class="container "> -->
+            <!-- <h3 class="w3-center ">CONTACT</h3> -->
+
+
+            <!-- <div class="bgimg-3 w3-display-container w3-opacity-min"> -->
+            <!-- <div class="w3-display-middle"> -->
+            <!-- <span class="w3-xxlarge w3-text-white w3-wide">CONTACT</span> -->
+            <!-- </div> -->
+            <!-- </div> -->
+
             <br>
             <br>
 
-            <div class="container">
+            <div class=row>
+                <div class="col-md-12 ">
 
-                <!-- <h3 class="w3-center">CONTACT</h3> -->
-                <div class=r ow>
-                    <div class="col-md-12">
+                    <div class="alert alert-info" role="alert ">
+                        stacieknisley@juno.com
+                    </div>
 
-                        <div class="alert alert-dark" role="alert">
-                            stacieknisley@juno.com
+                    <div class="alert alert-info" role="alert ">
+                        <a href="https://github.com/stacieknisley ">stacieknisley.github</a>
+
+                    </div>
+
+                    <div class="alert alert-info" role="alert ">
+                        <a href="https://www.linkedin.com/in/stacieknisley/ ">linkin.com/in/stacieknisley</a>
+                    </div>
+
+
+
+                    <!-- <div class="dropdown ">
+                        <button class="btn btn-secondary dropdown-toggle " type="button " id="dropdownMenuButton
+                        " data-toggle="dropdown " aria-haspopup="true " aria-expanded="false ">
+                            Professional Information
+                        </button>
+                        <div class="alert alert-info " role="alert ">
+                            <a href="portfolio.html ">Stacie Knisley Professional Information</a>
                         </div>
 
-                        <div class="alert alert-info" role="alert">
-                            <a href="https://github.com/stacieknisley">stacieknisley.github</a>
+                        <div class="dropdown-menu " aria-labelledby="dropdownMenuButton ">
+                            <a class="dropdown-item " href="# ">docId</a>
+                            <a class="dropdown-item " href="# ">Another action</a>
+                            <a class="dropdown-item " href="# ">Something else here</a>
+                        </div>
+                    </div>
 
+
+
+
+
+                    
+                    <!- <div class="w3-content w3-container w3-padding-64" id="contact"> -->
+                    <!-- <h3 class="w3-center">WHERE I WORK</h3> -->
+                    <!-- <p class="w3-center">
+                            <em>I'd love your feedback!</em>
+                        </p> -->
+                    <div class="w3-row w3-padding-32 w3-section">
+                        <div class="w3-col m4 w3-container">
+                            <!-- <img src="/w3images/map.jpg" class="w3-image w3-round" style="width:100%"> -->
                         </div>
 
-                        <div class="alert alert-dark" role="alert">
-                            <a href="https://www.linkedin.com/in/stacieknisley/">linkin.com/in/stacieknisley</a>
-                        </div>
-                        <br>
 
-                        <!--                               
-                                  <div class="dropdown">
-                                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                      Professional Information
-                                    </button>
-                                    <div class="alert alert-info" role="alert">
-                                      <a href="portfolio.html">Stacie Knisley Professional Information</a>
-                                  </div>
-                                    
-                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                      <a class="dropdown-item" href="#">docId</a>
-                                      <a class="dropdown-item" href="#">Another action</a>
-                                      <? <a class="dropdown-item" href="#">Something else here</a> -->
+
+                        <!-- <div class="alert alert-info " role="alert "> -->
+                        <!-- <a href src= "assets/images/ScreenShotsofHomework/1Wireframe.png ">Stacie M. Knisley professional information</a> -->
+
+
+
+
                         <!-- </div> -->
 
-
-
-
-                        <!-- <div class="alert alert-info" role="alert"> -->
-                        <!-- <a href src= "assets/images/ScreenShotsofHomework/1Wireframe.png">Stacie M. Knisley professional information</a> -->
 
                     </div>
 
 
-                </div>
-
-
-            </div>
 
 
 
@@ -576,74 +732,89 @@
 
 
 
+                    <!-- Footer -->
+                    <footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off ">
+                        <a href="#home " class="w3-button w3-light-grey ">
+                            <i class="fa fa-arrow-up w3-margin-right "></i>To the top</a>
+                        <div class="w3-xlarge w3-section ">
+                            <!-- <i class="fa fa-facebook-official w3-hover-opacity "></i> -->
+                            <!-- <i class="fa fa-instagram w3-hover-opacity "></i> -->
+                            <!-- <i class="fa fa-snapchat w3-hover-opacity "></i> -->
+                            <!-- <i class="fa fa-pinterest-p w3-hover-opacity "></i> -->
+                            <!-- <i class="fa fa-twitter w3-hover-opacity "></i> -->
+                            <!-- <i class="fa fa-linkedin w3-hover-opacity "></i> -->
+                        </div>
+
+                    </footer>
+
+                    <!-- Add Google Maps -->
+                    <script>
+
+                        $(document).ready(function () {
+                            $(".fancybox").fancybox({
+                                openEffect: "none",
+                                closeEffect: "none"
+                            });
+
+                            $(".zoom").hover(function () {
+
+                                $(this).addClass('transition');
+                            }, function () {
+
+                                $(this).removeClass('transition');
+                            });
+                        });
+
+                        // function myMap() {
+                        //     myCenter = new google.maps.LatLng(41.878114, -87.629798);
+                        //     var mapOptions = {
+                        //         center: myCenter,
+                        //         zoom: 12, scrollwheel: false, draggable: false,
+                        //         mapTypeId: google.maps.MapTypeId.ROADMAP
+                        //     };
+                        //     var map = new google.maps.Map(document.getElementById("googleMap "), mapOptions);
+
+                        //     var marker = new google.maps.Marker({
+                        //         position: myCenter,
+                        //     });
+                        //     marker.setMap(map);
+                        // }
+
+                        // Modal Image Gallery
+                        function onClick(element) {
+                            document.getElementById("img01 ").src = element.src;
+                            document.getElementById("modal01 ").style.display = "block ";
+                            var captionText = document.getElementById("caption ");
+                            captionText.innerHTML = element.alt;
+                        }
+
+                        // Change style of navbar on scroll
+                        window.onscroll = function () { myFunction() };
+                        function myFunction() {
+                            var navbar = document.getElementById("myNavbar ");
+                            if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+                                navbar.className = "w3-bar " + " w3-card " + " w3-animate-top " + " w3-white ";
+                            } else {
+                                navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white ", " ");
+                            }
+                        }
+
+                        // Used to toggle the menu on small screens when clicking on the menu button
+                        function toggleFunction() {
+                            var x = document.getElementById("navDemo ");
+                            if (x.className.indexOf("w3-show ") == -1) {
+                                x.className += " w3-show ";
+                            } else {
+                                x.className = x.className.replace(" w3-show ", " ");
+                            }
+                        }
 
 
-            <!-- Footer -->
-            <footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
-                <a href="#home" class="w3-button w3-light-grey">
-                    <i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
-                <div class="w3-xlarge w3-section">
-                    <!-- <i class="fa fa-facebook-official w3-hover-opacity"></i> -->
-                    <i class="fa fa-instagram w3-hover-opacity"></i>
-                    <!-- <i class="fa fa-snapchat w3-hover-opacity"></i> -->
-                    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
-                    <i class="fa fa-twitter w3-hover-opacity"></i>
-                    <i class="fa fa-linkedin w3-hover-opacity"></i>
-                </div>
 
 
-        </div>
-
-        </footer>
-
-        <!-- Add Google Maps -->
-        <script>
-            // function myMap() {
-            //     myCenter = new google.maps.LatLng(41.878114, -87.629798);
-            //     var mapOptions = {
-            //         center: myCenter,
-            //         zoom: 12, scrollwheel: false, draggable: false,
-            //         mapTypeId: google.maps.MapTypeId.ROADMAP
-            //     };
-            //     var map = new google.maps.Map(document.getElementById("googleMap"), mapOptions);
-
-            //     var marker = new google.maps.Marker({
-            //         position: myCenter,
-            //     });
-            //     marker.setMap(map);
-            // }
-
-            // Modal Image Gallery
-            function onClick(element) {
-                document.getElementById("img01").src = element.src;
-                document.getElementById("modal01").style.display = "block";
-                var captionText = document.getElementById("caption");
-                captionText.innerHTML = element.alt;
-            }
-
-            // Change style of navbar on scroll
-            window.onscroll = function () { myFunction() };
-            function myFunction() {
-                var navbar = document.getElementById("myNavbar");
-                if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-                    navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
-                } else {
-                    navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
-                }
-            }
-
-            // Used to toggle the menu on small screens when clicking on the menu button
-            function toggleFunction() {
-                var x = document.getElementById("navDemo");
-                if (x.className.indexOf("w3-show") == -1) {
-                    x.className += " w3-show";
-                } else {
-                    x.className = x.className.replace(" w3-show", "");
-                }
-            }
-        </script>
-        <!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap"></script> -->
-        <!--
+                    </script>
+                    <!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap "></script> -->
+                    <!--
 To use this code on your website, get a free API key from Google.
 Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
 -->
